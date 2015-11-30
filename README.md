@@ -6,16 +6,15 @@ Para instalar el script debe ponerse en una carpeta y darse permisos de ejecuci�
 
 ## 2. Funcionamiento
 
-### 2.1 IP Automática
+### IP Automática
 
-De esta forma, se va actualizar la ip de la zona DNS correspondiente a HOST con la  
-ip de la máquina desde donde se ejecuta el script.  
+De esta forma, se va actualizar la ip de la zona DNS correspondiente a HOST con la  ip de la máquina desde donde se ejecuta el script.  
 
 ```
 ./dondomcli.sh -u DONDOMINIO_USERNAME -p DONDNS_API_KEY -h HOST
 ```
 
-### 2.2 Fijar IP
+### Fijar IP
 
 Lo mismo que la anterior, pero la IP no será asignada de forma automática, sino que se asignará la IP especificada por linea de comandos.  
 
@@ -23,17 +22,16 @@ Lo mismo que la anterior, pero la IP no será asignada de forma automática, sin
 ./dondomcli.sh -u DONDOMINIO_USERNAME -p DONDNS_API_KEY -h HOST -i IP
 ```
 
-### 2.3 Uso del fichero de configuración.
+### Uso del fichero de configuración.
 
-Si no se desea especificar siempre el Usuario y Clave API, se puede asignar a través
-de un fichero de configuración que se puede llamar de la siguiente manera.  
+Si no se desea especificar siempre el Usuario y Clave API, se puede asignar a través de un fichero de configuración que se puede llamar de la siguiente manera.  
 
 ```
 ./dondomcli.sh -c FILECONF
 ```
 
-El resto de opciones pueden especificarse para asignar la misma configuración con 
-diferentes hots.
+El resto de opciones pueden especificarse para asignar la misma configuración con diferentes hots.  
+
 
 ```
 ./dondominio.sh -c FILECONF -h HOST1.DOMINIO.ES
@@ -48,8 +46,8 @@ El fichero de configuración por defecto es el siguiente:
 
 ## CRON
 
-Para lanzar el script de forma automática, y cada vez que se actualize la dirección
-IP de un equipo, se debe añadir la siguiente linea en el cron (fichero /etc/crontab)
+Para lanzar el script de forma automática, y cada vez que se actualize la dirección IP de un equipo, se debe añadir la siguiente linea en el cron (fichero `/etc/crontab`)  
+
 
 ```
 */5 * * * * user test -x /etc/dondominio/dondomcli.sh && /etc/dondominio/dondomcli.sh -c /etc/dondominio/dondomcli.conf
