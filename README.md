@@ -12,7 +12,7 @@ De esta forma, se va actualizar la ip de la zona DNS correspondiente a HOST con 
 ip de la máquina desde donde se ejecuta el script.  
 
 ```
-./dondomcli.sh -u USUARIO_DON_DOMINIO -p API_KEY_DONDOMINIO -h HOST
+./dondomcli.sh -u DONDOMINIO_USERNAME -p DONDNS_API_KEY -h HOST
 ```
 
 ### 2.2 Fijar IP
@@ -20,7 +20,7 @@ ip de la máquina desde donde se ejecuta el script.
 Lo mismo que la anterior, pero la IP no será asignada de forma automática, sino que se asignará la IP especificada por linea de comandos.  
 
 ```
-./dondomcli.sh -u USUARIO_DON_DOMINIO -p API_KEY_DONDOMINIO -h HOST -i IP
+./dondomcli.sh -u DONDOMINIO_USERNAME -p DONDNS_API_KEY -h HOST -i IP
 ```
 
 ### 2.3 Uso del fichero de configuración.
