@@ -42,7 +42,9 @@ diferentes hots.
 
 El fichero de configuración por defecto es el siguiente:
 
-```/etc/dondominio/dondomcli.conf```
+```
+/etc/dondominio/dondomcli.conf
+```
 
 ## CRON
 
