@@ -14,14 +14,14 @@
 DEFAULTCONFIG=/etc/dondominio/dondomcli.conf
 APIURL="https://dondns.dondominio.com/xml/"
 WGET=`which wget`
-WGETOPT=" -q --no-check-certificate -O - --post-data "
+WGETOPT=" -q --no-check-certificate -O - --user-agent=WgetDonDNS/1.1 --post-data "
 CUT=`which cut`
 ECHO=`which echo`
 
 
 if [ "$WGET" = "" ]; then
 	WGET=`which curl`
-	WGETOPT="--data"
+	WGETOPT="-A CurlDonDNS/1.1 --data"
 fi
 
 function CheckWget()
