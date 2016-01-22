@@ -2,7 +2,7 @@
 
 ## 1. Instalar
 
-Para instalar el script debe ponerse en una carpeta y darse permisos de ejecuciónen caso de que no los tengas (`chmod +x ./dondomcli.sh`)
+Para instalar el script debe ponerse en una carpeta y darse permisos de ejecución en caso de que no los tengas (`chmod +x ./dondomcli.sh`)
 
 ## 2. Funcionamiento
 
