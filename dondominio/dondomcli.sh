@@ -12,7 +12,7 @@
 ############################################################
 
 DEFAULTCONFIG=/etc/dondominio/dondomcli.conf
-APIURL="https://dondns.dondominio.com/json/"
+APIURL="https://dondns.dondominio.com/plain/"
 WGET=`which wget`
 WGETOPT=" -q --no-check-certificate -O - --user-agent=WgetDonDNS/1.1 --post-data "
 CUT=`which cut`
