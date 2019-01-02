@@ -24,7 +24,7 @@ Lo mismo que la anterior, pero la IP no será asignada de forma automática, sin
 
 ### Uso del fichero de configuración.
 
-Si no se desea especificar siempre el Usuario y Clave API, se puede asignar a través de un fichero de configuración que se puede llamar de la siguiente manera.  
+Si no se desea especificar siempre el Usuario y DonDNS Key, se puede asignar a través de un fichero de configuración que se puede llamar de la siguiente manera.  
 
 ```
 ./dondomcli.sh -c FILECONF
